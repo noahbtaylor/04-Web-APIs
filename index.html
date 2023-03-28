@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/css.css" />
+    <title>Code-Quiz</title>
+  </head>
+  <header>
+    <h3 class="timer">Timer:<span class="time" id="timer"></span></h3>
+    <h3 id="high-scores">Click to see HighScores</h3>
+  </header>
+  <body>
+    <section id="start-container" class="hide">
+      <h1>Coding Quiz</h1>
+      <button type="button" id="start-button">Begin Quiz!</button>
+      <p>
+        Try to answer all questions under time limit. Keep in mind that all
+        incorrect answers will penalize you time by ten seconds! Please Click the next button once you click your choice (regardless of wrong or right)
+      </p>
+    </section>
+    <div class="container">
+      <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+        </div>
+      </div>
+       <div id="form-container" class="hide"></div>
+       <div id="scores-list" class="hide"></div>
+      </div>
+
+    </section>
+    <button id="next-btn" class="next-btn btn hide">Next</button>
+    </body>
+    <script src="./index.js"></script>
+  </body>
+</html>
